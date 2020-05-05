@@ -1,0 +1,141 @@
+import React from 'react';
+
+const UpvotesSection = ({ articleName, upvotes, setArticleInfo }) => {
+    const upvoteArticle = async () => {
+        const result = await fetch(`/api/articles/${articleName}/upvote`, {
+            method: 'post',
+        });
+        const body = await result.json();
+        setArticleInfo(body);
+    }
+    return (
+        <div id="upvotes-section">
+            <button onClick={() => upvoteArticle()}>Add Upvote</button>
+            <p>This post has been upvoted {upvotes} times</p>
+        </div>
+    );
+}
+
+export default UpvotesSection;
+
+
+background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+
+ db.createCollection("articles") 
+db.articles.insert({name:"learn-node",upvotes:0,comments:[{username:"A",comments:"B"}] })
+
+{
+        "_id" : ObjectId("5e8a730db4456367f02cd084"),
+        "name" : "learn-react",
+        "upvotes" : 11,
+        "comments" : [
+                {
+                        "username" : "Himanshu",
+                        "text" : "I love it"
+                },
+                {
+                        "username" : "Dnyanesh",
+                        "text" : "I hate this"
+                }
+        ]db.articles.insert({name:"learn-node",upvotes:0,comments:[{username:"A",comments:"B"}] })
+}
+{
+        "_id" : ObjectId("5e8a732bb4456367f02cd085"),
+        "name" : "learn-node",
+        "upvotes" : 15,
+        "comments" : [
+                {
+                        "username" : "Ram",
+                        "text" : "I like it"
+                },
+                {
+                        "username" : "Himanshu",
+                        "text" : "I love it"
+                }
+        ]
+}
+>
+
+*********************************************************************
+
+EXPORT:
+C:\Program Files\MongoDB\Server\4.2\bin>mongodump  --db my-blog --out "D:\ABC"
+IMPORT:
+C:\Program Files\MongoDB\Server\4.2\bin>mongorestore  --db my-blog1 "D:\ABC\my-blog"
+
+use MedizinPlus
+db.createCollection("products")
+db.products.insert({
+
+    pname:
+    category:
+    price:
+    quantity:
+
+})
+db.products.insert({pname:"health-and-medicine",category:"health-and-medicine",price:10,quantity:30})
+
+
+
+CRUD operations in mongoclient
+https://mongodb.github.io/node-mongodb-native/api-articles/nodekoarticle1.html
+https://flaviocopes.com/node-mongodb/
+
+Makning the cards responsive
+https://stackoverflow.com/questions/36487389/bootstrap-4-card-deck-table-cell-columns-responsive-based-on-viewport
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+
+
+
+
+C:\Users\Dnyanesh Tarte>netstat -ano | findstr 3000
+  TCP    0.0.0.0:3000           0.0.0.0:0              LISTENING       13648
+  TCP    127.0.0.1:3000         127.0.0.1:52772        TIME_WAIT       0
+  TCP    127.0.0.1:3000         127.0.0.1:52774        TIME_WAIT       0
+  TCP    127.0.0.1:3000         127.0.0.1:52777        TIME_WAIT       0
+  TCP    127.0.0.1:3000         127.0.0.1:52788        TIME_WAIT       0
+  TCP    127.0.0.1:52784        127.0.0.1:3000         TIME_WAIT       0
+  TCP    127.0.0.1:52785        127.0.0.1:3000         TIME_WAIT       0
+  TCP    127.0.0.1:52786        127.0.0.1:3000         TIME_WAIT       0
+  TCP    127.0.0.1:52789        127.0.0.1:3000         TIME_WAIT       0
+
+C:\Users\Dnyanesh Tarte>taskkill /F /PID 13648
+SUCCESS: The process with PID 13648 has been terminated.

@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"MedizinPlus.articles"}],"uuid":"066a29664c6a4447b61d6b9834e62567"}
