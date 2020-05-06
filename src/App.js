@@ -19,7 +19,9 @@ function App() {
           
           <Route path="/" component={HomePage} exact />
           <Route path="/login" component={LoginPage}/>
+          <Route path="/productpage/products/:pname" component={ProductPage}/>
           <Route path="/productpage/:category" component={ProductPage}/>
+         
           <Route path="/about" component={AboutPage} />
           <Route path="/cart" component={Cart} />
           <Route component={NotFoundPage} />
