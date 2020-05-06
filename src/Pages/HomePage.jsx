@@ -7,7 +7,6 @@ const HomePage = () => (
     <>
         <NavBar/>
         <h1>MedizinPlus</h1>
-        <SearchBar/>
         <Categories/>
     </>
 
